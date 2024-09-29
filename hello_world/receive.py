@@ -17,6 +17,8 @@ def consumer_process():
     channel = connection.channel()
     channel.queue_declare(queue='hello')
 
+    # callback template of rabbitmq signature
+    # pylint: disable-next=unused-argument
     def callback(ch, method, properties, body):
         print(f" [x] Received {body}")
 
