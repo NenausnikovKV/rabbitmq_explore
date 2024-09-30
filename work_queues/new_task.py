@@ -1,4 +1,4 @@
-"""Simple publisher for rabbitmq"""
+"""Standard not durable publisher for rabbitmq"""
 import sys
 
 import pika

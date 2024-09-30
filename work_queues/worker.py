@@ -1,5 +1,5 @@
 """
-Simple receiver of rabbitMQ queue
+No durable receiver of rabbitMQ queue
 """
 import os
 import sys
