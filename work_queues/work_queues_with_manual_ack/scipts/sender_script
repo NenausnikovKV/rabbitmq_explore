@@ -1,0 +1,9 @@
+# start worker
+python work_queues/work_queues_with_manual_ack/worker.py
+
+# start producer
+python work_queues/work_queues_with_manual_ack/new_task.py First message.
+python work_queues/work_queues_with_manual_ack/new_task.py Second message..
+python work_queues/work_queues_with_manual_ack/new_task.py Third message...
+python work_queues/work_queues_with_manual_ack/new_task.py Fourth message....
+python work_queues/work_queues_with_manual_ack/new_task.py Fifth message.....
