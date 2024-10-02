@@ -1,0 +1,8 @@
+# start broadcast message
+python exchange_handle/emit_log.py
+
+# start receive message from "logs" exchanger
+python exchange_handle/receive_logs.py > logs_from_rabbit.log
+python exchange_handle/receive_logs.py
+
+
