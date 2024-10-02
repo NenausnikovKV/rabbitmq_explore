@@ -20,6 +20,7 @@ def consumer_process():
     # callback template of rabbitmq signature
     # pylint: disable-next=unused-argument
     def callback(ch, method, properties, body):
+        """callback function for rabbitmq receiver"""
         print(f" [x] Received {body}")
 
     channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
